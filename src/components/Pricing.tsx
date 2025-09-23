@@ -1,7 +1,7 @@
 export default function Pricing() {
   return (
     <section id="pricing" className="relative overflow-hidden border-t border-black/10">
-      <div className="relative mx-auto max-w-7xl px-4 pt-16 pb-8 sm:pt-20 sm:pb-12">
+      <div className="relative mx-auto max-w-7xl px-4 pt-16 pb-0 sm:pt-20 sm:pb-0">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
             Pricing (Coming Soon)
