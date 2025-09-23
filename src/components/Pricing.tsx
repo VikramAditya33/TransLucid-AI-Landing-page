@@ -3,7 +3,7 @@ export default function Pricing() {
     <section id="pricing" className="relative overflow-hidden border-t border-black/10">
       <div className="relative mx-auto max-w-7xl px-4 pt-16 pb-0 sm:pt-20 sm:pb-0">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+          <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl" style={{ fontFamily: 'var(--font-pt-sans-narrow)' }}>
             Pricing (Coming Soon)
           </h2>
           <p className="mt-3 text-black/70 dark:text-white/70">

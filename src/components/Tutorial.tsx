@@ -9,7 +9,7 @@ export default function Tutorial({ videoSrc = "/tutorial.mp4", posterSrc }: Tuto
     <section id="tutorial" className="relative overflow-hidden border-t border-black/10">
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:py-20">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+          <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl" style={{ fontFamily: 'var(--font-pt-sans-narrow)' }}>
             Tutorial
           </h2>
           <p className="mt-3 text-black/70 dark:text-white/70">

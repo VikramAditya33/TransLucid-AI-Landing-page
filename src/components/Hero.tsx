@@ -19,7 +19,7 @@ export default function Hero({ onCtaHref = "#" }: HeroProps) {
               Translate. Explain. Understand.
             </h1>
             <p className="mt-4 max-w-xl text-base text-black/70 dark:text-white/70 sm:text-lg">
-              A Chrome Extension that not only translates any text into English but also explains it for better clarity.
+              A Chrome Extension that translates text to any language and provides AI-powered explanations for better understanding.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
@@ -28,7 +28,7 @@ export default function Hero({ onCtaHref = "#" }: HeroProps) {
               >
                 Add to Chrome
               </a>
-              <a href="#features" className="inline-flex items-center justify-center rounded-md border border-black/10 px-6 py-3 text-sm font-medium hover:bg-black/5">
+              <a href="/features" className="inline-flex items-center justify-center rounded-md border border-black/10 px-6 py-3 text-sm font-medium hover:bg-black/5">
                 Explore features
               </a>
             </div>
