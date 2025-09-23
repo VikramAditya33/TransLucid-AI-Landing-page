@@ -19,10 +19,10 @@ export default function Navbar({ brand = "Translucid AI" }: NavbarProps) {
           </Link>
 
           <nav className="hidden items-center gap-8 text-sm sm:flex">
-            <a href="/#about" className="hover:opacity-80 transition-opacity">About</a>
-            <a href="/features" className="hover:opacity-80 transition-opacity">Features</a>
-            <a href="/pricing" className="hover:opacity-80 transition-opacity">Pricing</a>
-            <a href="/tutorial" className="hover:opacity-80 transition-opacity">Tutorial</a>
+            <Link href="/#about" className="hover:opacity-80 transition-opacity">About</Link>
+            <Link href="/features" className="hover:opacity-80 transition-opacity">Features</Link>
+            <Link href="/pricing" className="hover:opacity-80 transition-opacity">Pricing</Link>
+            <Link href="/tutorial" className="hover:opacity-80 transition-opacity">Tutorial</Link>
           </nav>
 
           <div className="hidden sm:block">
@@ -58,16 +58,16 @@ export default function Navbar({ brand = "Translucid AI" }: NavbarProps) {
         <div className="sm:hidden border-t border-black/10">
           <div className="mx-auto max-w-7xl px-4 py-4">
             <div className="grid gap-3 text-sm">
-              <a href="/#about" className="py-2">About</a>
-              <a href="/features" className="py-2">Features</a>
-              <a href="/pricing" className="py-2">Pricing</a>
-              <a href="/tutorial" className="py-2">Tutorial</a>
-              <a
+              <Link href="/#about" className="py-2">About</Link>
+              <Link href="/features" className="py-2">Features</Link>
+              <Link href="/pricing" className="py-2">Pricing</Link>
+              <Link href="/tutorial" className="py-2">Tutorial</Link>
+              <Link
                 href="/#get-started"
                 className="mt-2 inline-flex items-center justify-center rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background"
               >
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
         </div>

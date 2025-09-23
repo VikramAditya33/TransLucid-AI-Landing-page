@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -58,12 +59,12 @@ export default function TutorialPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <a
+            <Link
               href="/#get-started"
               className="inline-flex items-center rounded-md bg-foreground px-6 py-3 text-sm font-medium text-background shadow-sm transition-colors hover:bg-black/80 dark:hover:bg-white/80"
             >
               Get Started with Translucid AI
-            </a>
+            </Link>
           </div>
         </div>
       </main>

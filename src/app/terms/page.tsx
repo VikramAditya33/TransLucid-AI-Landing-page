@@ -22,7 +22,7 @@ export default function TermsOfService() {
 
             <h2 className="text-2xl font-semibold mb-4">Description of Service</h2>
             <p className="mb-6">
-              Translucid AI is a Chrome Extension that provides real-time translation and AI-powered explanations of selected text on web pages. The service is provided "as is" without warranties of any kind.
+              Translucid AI is a Chrome Extension that provides real-time translation and AI-powered explanations of selected text on web pages. The service is provided &quot;as is&quot; without warranties of any kind.
             </p>
 
             <h2 className="text-2xl font-semibold mb-4">User Responsibilities</h2>

@@ -1,5 +1,4 @@
 import { Playfair_Display } from "next/font/google";
-import Silk from "@/components/Silk";
 const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["600", "700", "800"],

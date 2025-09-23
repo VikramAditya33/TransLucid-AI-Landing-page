@@ -7,7 +7,7 @@ export default function About() {
             About Me
           </h2>
           <p className="mt-6 text-lg text-black/70 dark:text-white/70">
-            Hi! I'm Vikram Aditya Verma, a 19-year-old Full Stack Developer from India. I'm passionate about creating innovative solutions that bridge language barriers and help people understand content better.
+            Hi! I&apos;m Vikram Aditya Verma, a 19-year-old Full Stack Developer from India. I&apos;m passionate about creating innovative solutions that bridge language barriers and help people understand content better.
           </p>
         </div>
 

@@ -32,7 +32,7 @@ export default function PrivacyPolicy() {
 
             <h2 className="text-2xl font-semibold mb-4">Third-Party Services</h2>
             <p className="mb-6">
-              Our extension uses Google Gemini API for AI-powered explanations. Please review Google's privacy policy for information about how they handle data.
+              Our extension uses Google Gemini API for AI-powered explanations. Please review Google&apos;s privacy policy for information about how they handle data.
             </p>
 
             <h2 className="text-2xl font-semibold mb-4">Browser Permissions</h2>
@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
 
             <h2 className="text-2xl font-semibold mb-4">Changes to This Policy</h2>
             <p className="mb-6">
-              We may update this privacy policy from time to time. We will notify users of any material changes by updating the "Last updated" date at the top of this policy.
+              We may update this privacy policy from time to time. We will notify users of any material changes by updating the &quot;Last updated&quot; date at the top of this policy.
             </p>
 
             <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
