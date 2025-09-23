@@ -20,22 +20,22 @@ const ptSansNarrow = PT_Sans_Narrow({
 });
 
 export const metadata: Metadata = {
-  title: "Translucid AI — Translate. Explain. Understand.",
+  title: "TransLucid AI",
   description:
     "A Chrome Extension that translates any text into English and explains it for clarity.",
-  metadataBase: new URL("https://translucid.ai"),
+  metadataBase: new URL("https://translucidextension.vercel.app"),
   openGraph: {
-    title: "Translucid AI — Translate. Explain. Understand.",
+    title: "TransLucid AI",
     description:
       "A Chrome Extension that translates any text into English and explains it for clarity.",
-    url: "https://translucid.ai",
-    siteName: "Translucid AI",
+    url: "https://translucidextension.vercel.app",
+    siteName: "TransLucid AI",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Translucid AI",
+        alt: "TransLucid AI",
       },
     ],
     locale: "en_US",

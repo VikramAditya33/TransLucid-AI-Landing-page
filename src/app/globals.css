@@ -34,9 +34,9 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Normal scrolling */
+/* Smooth scrolling */
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 html {

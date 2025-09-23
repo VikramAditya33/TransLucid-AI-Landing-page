@@ -9,9 +9,9 @@ const pricingPlans = [
     period: "forever",
     description: "Perfect for trying out Translucid AI",
     features: [
-      "10 translations per day",
-      "Basic explanations",
-      "Standard response time",
+      "Limited translations",
+      "Basic language support",
+      "Limited standard explanations",
       "Community support"
     ],
     buttonText: "Get Started Free",
@@ -20,40 +20,37 @@ const pricingPlans = [
   },
   {
     id: 2,
-    name: "Pro Plan",
-    price: "$9.99",
+    name: "Monthly Plan",
+    price: "$2.99",
     period: "per month",
-    description: "For power users and professionals",
+    description: "Perfect for regular users",
     features: [
       "Unlimited translations",
-      "Advanced AI explanations",
-      "Priority response time",
-      "Advanced explanations",
-      "Email support",
+      "50+ more language support",
+      "Chat history access",
+      "Priority support",
       "Usage analytics"
     ],
-    buttonText: "Start Pro Trial",
+    buttonText: "Subscribe Monthly",
     buttonStyle: "bg-foreground text-background hover:bg-black/80 dark:hover:bg-white/80",
     popular: true
   },
   {
     id: 3,
-    name: "Team Plan",
-    price: "$29.99",
-    period: "per month",
-    description: "For teams and organizations",
+    name: "Yearly Plan",
+    price: "$29.9",
+    period: "per year",
+    description: "Best value for long-term users",
     features: [
-      "Everything in Pro",
-      "Team collaboration",
-      "Admin dashboard",
-      "Custom integrations",
+      "Everything in Monthly",
+      "1+1 month free for first time",
       "Priority support",
-      "Usage reports",
-      "Team analytics"
+      "Early access to features",
+      "Usage analytics"
     ],
-    buttonText: "Contact Sales",
-    buttonStyle: "border border-black/10 hover:bg-black/5",
-    popular: false
+    buttonText: "Subscribe Yearly",
+    buttonStyle: "bg-foreground text-background hover:bg-black/80 dark:hover:bg-white/80",
+    popular: true
   }
 ];
 
