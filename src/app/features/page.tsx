@@ -49,6 +49,12 @@ const features = [
   },
 ];
 
+export const metadata = {
+  title: "Features | TransLucid AI",
+  description:
+    "Translate smarter and understand faster. See TransLucid AI’s 50+ languages, context-aware AI explanations, chat and reliability.",
+};
+
 export default function FeaturesPage() {
   return (
     <div className="font-sans min-h-screen">

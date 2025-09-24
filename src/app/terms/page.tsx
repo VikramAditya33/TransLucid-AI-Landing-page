@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Terms of Service | TransLucid AI",
+  description:
+    "The terms for using TransLucid AI. Learn about usage, limitations of liability, and service description.",
+};
 
 export default function TermsOfService() {
   return (

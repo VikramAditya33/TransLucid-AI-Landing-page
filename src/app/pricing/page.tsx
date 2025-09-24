@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -53,6 +54,12 @@ const pricingPlans = [
     popular: true
   }
 ];
+
+export const metadata: Metadata = {
+  title: "Pricing | TransLucid AI",
+  description:
+    "Start free. Upgrade when you’re ready. Transparent pricing for 50+ language AI translation and context-aware explanations.",
+};
 
 export default function PricingPage() {
   return (

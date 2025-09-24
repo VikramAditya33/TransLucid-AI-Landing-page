@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | TransLucid AI",
+  description:
+    "Read how TransLucid AI handles data. No storage of selected text; real-time processing for translation and explanations.",
+};
 
 export default function PrivacyPolicy() {
   return (

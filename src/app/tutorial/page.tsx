@@ -1,6 +1,13 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Tutorial | TransLucid AI",
+  description:
+    "Learn TransLucid AI in minutes. See the Chrome extension in action and master translation and AI explanations fast.",
+};
 
 export default function TutorialPage() {
   return (
