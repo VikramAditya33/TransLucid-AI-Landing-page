@@ -8,11 +8,14 @@ export default function TutorialPage() {
       <Navbar />
       <main className="mx-auto max-w-4xl px-4 py-16 sm:py-20">
         <div className="mx-auto max-w-3xl">
-          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl mb-8 text-center" style={{ fontFamily: 'var(--font-pt-sans-narrow)' }}>
-            Tutorial
+          <h1
+            className="text-5xl sm:text-6xl font-bold tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)] mb-6 text-center"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            See it in action.
           </h1>
-          <p className="text-center text-black/70 dark:text-white/70 mb-12">
-            Watch how Translucid AI works in action. Learn how to use the extension step by step.
+          <p className="text-center text-gray-300 leading-relaxed mb-12">
+            Watch how Translucid AI works and learn the fastest way to use it.
           </p>
 
           <div className="mx-auto aspect-video max-w-4xl overflow-hidden rounded-xl border border-black/10 bg-black shadow-lg">

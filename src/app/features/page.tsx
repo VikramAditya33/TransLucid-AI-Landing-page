@@ -6,7 +6,7 @@ const features = [
   {
     id: 1,
     title: "Instant Translation in 50+ Languages",
-    description: "Select any text on any website and get instant, accurate translations in 50+ languages. No more copy-pasting or switching tabs, just highlight and translate.",
+    description: "Highlight. Translate. Done. Get accurate translations in 50+ languages without copy-pasting or switching tabs.",
     videoSrc: "/feature_1.mp4",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -16,8 +16,8 @@ const features = [
   },
   {
     id: 2,
-    title: "AI-Powered Explanations",
-    description: "Don't just translate, understand. Get clear, simplified explanations that break down complex concepts into easy-to-grasp insights.",
+    title: "Beyond Translation. Real Understanding.",
+    description: "AI explains the meaning, context, and nuance — so you don’t just read words, you get the message.",
     videoSrc: "/feature_2.mp4",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,8 +27,8 @@ const features = [
   },
   {
     id: 3,
-    title: "Interactive Chat Interface",
-    description: "Ask follow-up questions, dive deeper into topics, and have meaningful conversations with your content. Get context-aware insights tailored to your needs.",
+    title: "Ask. Clarify. Go Deeper.",
+    description: "Ask follow‑ups and steer the conversation. The chat keeps your selection as context, so every answer moves you forward.",
     videoSrc: "/feature_3.mp4",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -38,8 +38,8 @@ const features = [
   },
   {
     id: 4,
-    title: "Context-Aware & Reliable",
-    description: "Every response is grounded in your selected text. No hallucinations, no generic answers, just accurate, context-specific information you can trust.",
+    title: "Grounded in Your Context. Trustworthy by Design.",
+    description: "Every response stays anchored to your selection — no fluff, no hallucinations. Precise, source‑aware answers you can trust.",
     videoSrc: "/feature_4.mp4",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,34 +54,35 @@ export default function FeaturesPage() {
     <div className="font-sans min-h-screen">
       <Navbar />
       <main className="mx-auto max-w-7xl px-4 py-16 sm:py-20">
-        <div className="mx-auto max-w-3xl text-center mb-16">
-          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl mb-8" style={{ fontFamily: 'var(--font-pt-sans-narrow)' }}>
-            Features
+        <div className="mx-auto max-w-4xl text-center mb-16">
+          <h1
+            className="text-5xl sm:text-6xl font-bold tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)] mb-6"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            Translate better. Understand faster.
           </h1>
-          <p className="text-lg text-black/70 dark:text-white/70">
-            Everything you need to translate and truly understand content. See each feature in action with detailed demonstrations.
+          <p className="text-lg text-gray-300 leading-relaxed">
+            See each capability in action. Built for clarity, speed, and real comprehension.
           </p>
         </div>
 
         <div className="space-y-24">
           {features.map((feature, index) => (
             <div key={feature.id} className={`flex flex-col lg:flex-row gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-              {/* Content Side */}
               <div className="flex-1 space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500/10 to-purple-500/10 text-blue-600 dark:text-blue-400">
+              <div className="flex items-center gap-4">
+                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500/20 to-cyan-400/20 text-cyan-300">
                     {feature.icon}
                   </div>
-                  <h2 className="text-2xl font-semibold">{feature.title}</h2>
+                <h2 className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent drop-shadow-[0_2px_6px_rgba(0,0,0,0.25)]">{feature.title}</h2>
                 </div>
-                <p className="text-lg text-black/70 dark:text-white/70 leading-relaxed">
+              <p className="text-base md:text-lg text-gray-300 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
 
-              {/* Video Side */}
               <div className="flex-1">
-                <div className="aspect-video overflow-hidden rounded-xl border border-black/10 bg-black shadow-lg">
+                <div className="aspect-video overflow-hidden rounded-2xl border border-white/10 bg-black/60 shadow-xl transition hover:shadow-cyan-500/20 hover:ring-1 hover:ring-cyan-400/30">
                   <video
                     className="h-full w-full object-cover"
                     src={feature.videoSrc}

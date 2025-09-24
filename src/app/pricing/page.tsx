@@ -59,12 +59,15 @@ export default function PricingPage() {
     <div className="font-sans min-h-screen">
       <Navbar />
       <main className="mx-auto max-w-7xl px-4 py-16 sm:py-20">
-        <div className="mx-auto max-w-3xl text-center mb-16">
-          <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl mb-8" style={{ fontFamily: 'var(--font-pt-sans-narrow)' }}>
-            Pricing
+        <div className="mx-auto max-w-4xl text-center mb-16">
+          <h1
+            className="text-5xl sm:text-6xl font-bold tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)] mb-6"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            Choose your plan.
           </h1>
-          <p className="text-lg text-black/70 dark:text-white/70 mb-8">
-            Choose the perfect plan for your translation needs. Start free and upgrade anytime.
+          <p className="text-lg text-gray-300 leading-relaxed mb-8">
+            Start free. Upgrade when you’re ready.
           </p>
           <div className="inline-flex items-center rounded-lg bg-blue-50 dark:bg-blue-900/20 px-4 py-2 text-sm text-blue-700 dark:text-blue-300">
             <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -78,12 +81,11 @@ export default function PricingPage() {
           {pricingPlans.map((plan) => (
             <div
               key={plan.id}
-              className={`relative flex flex-col rounded-xl border p-8 shadow-sm transition-all duration-300 hover:shadow-md ${
-                plan.popular 
-                  ? 'border-blue-200 bg-blue-50/50 dark:border-blue-400/30 dark:bg-blue-900/10' 
-                  : 'border-black/10 bg-white dark:bg-black/20'
+              className={`relative flex flex-col rounded-2xl border p-8 backdrop-blur-xl transition-all duration-300 shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.18)] bg-white/10 dark:bg-white/5 border-white/20 hover:bg-white/15 dark:hover:bg-white/10 ${
+                plan.popular ? 'ring-1 ring-blue-400/40' : ''
               }`}
             >
+              <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-b from-white/40 to-transparent opacity-[0.08]" />
               {plan.popular && (
                 <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                   <span className="inline-flex items-center rounded-full bg-blue-600 px-3 py-1 text-xs font-medium text-white">
@@ -126,13 +128,13 @@ export default function PricingPage() {
               <div>
                 <h4 className="font-medium mb-2">Can I change plans anytime?</h4>
                 <p className="text-sm text-black/70 dark:text-white/70">
-                  Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.
+                  You can upgrade your plan at any time. Upgrades apply immediately.
                 </p>
               </div>
               <div>
                 <h4 className="font-medium mb-2">Is there a free trial?</h4>
                 <p className="text-sm text-black/70 dark:text-white/70">
-                  Yes, all paid plans come with a 14-day free trial. No credit card required.
+                  Reach out on <a href="https://x.com/ViXkrm" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">X</a> for a free trial.
                 </p>
               </div>
               <div>

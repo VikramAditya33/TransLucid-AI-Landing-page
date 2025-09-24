@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export interface NavbarProps {
@@ -14,8 +15,9 @@ export default function Navbar({ brand = "Translucid AI" }: NavbarProps) {
     <header className="sticky top-0 z-50 w-full border-b border-black/10 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="text-lg font-semibold tracking-tight">
-            {brand}
+          <Link href="/" className="text-lg font-semibold tracking-tight flex items-center gap-[1px]">
+            <Image src="/TL.png" alt="TL" width={40} height={40} className="h-8 w-8 sm:h-9 sm:w-9 object-contain shrink-0 relative -top-[1px]" />
+            <span>{brand}</span>
           </Link>
 
           <nav className="hidden items-center gap-8 text-sm sm:flex">

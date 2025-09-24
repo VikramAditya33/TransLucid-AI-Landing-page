@@ -1,19 +1,67 @@
+"use client";
+import { useEffect, useState } from "react";
+
+const NAMES = ["Vikram Aditya Verma", "विक्रम आदित्य वर्मा"] as const;
+
 export default function About() {
+  const [idx, setIdx] = useState(0);
+  const [typed, setTyped] = useState("");
+  const [phase, setPhase] = useState<"typing" | "pausing" | "deleting">("typing");
+
+  useEffect(() => {
+    const full = NAMES[idx];
+    const typing = 40;
+    const deleting = 25;
+    const pause = 800;
+
+    if (phase === "typing") {
+      if (typed.length < full.length) {
+        const t = setTimeout(() => setTyped(full.slice(0, typed.length + 1)), typing);
+        return () => clearTimeout(t);
+      }
+      const t = setTimeout(() => setPhase("pausing"), pause);
+      return () => clearTimeout(t);
+    }
+    if (phase === "pausing") {
+      const t = setTimeout(() => setPhase("deleting"), pause);
+      return () => clearTimeout(t);
+    }
+    if (phase === "deleting") {
+      if (typed.length > 0) {
+        const t = setTimeout(() => setTyped(full.slice(0, typed.length - 1)), deleting);
+        return () => clearTimeout(t);
+      }
+      setIdx((idx + 1) % NAMES.length);
+      setPhase("typing");
+    }
+  }, [typed, phase, idx]);
   return (
     <section id="about" className="relative overflow-hidden border-t border-black/10">
       <div className="relative mx-auto max-w-7xl px-4 py-16 sm:py-20">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl" style={{ fontFamily: 'var(--font-pt-sans-narrow)' }}>
-            About Me
+        <div className="mx-auto max-w-3xl text-center">
+          <h2
+            className="text-5xl sm:text-6xl font-bold tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]"
+            style={{ fontFamily: 'var(--font-playfair)' }}
+          >
+            About Me.
           </h2>
-          <p className="mt-6 text-lg text-black/70 dark:text-white/70">
-            Hi! I&apos;m Vikram Aditya Verma, a 19-year-old Full Stack Developer from India. I&apos;m passionate about creating innovative solutions that bridge language barriers and help people understand content better.
+          <p className="mt-6 text-lg text-gray-300 leading-relaxed">
+            I’m Vikram Aditya Verma — a 19‑year‑old developer from India. I’m currently building full‑stack applications with a focus on clean UI/UX, speed, and reliability. I love shipping tools that turn noisy information into clear, useful experiences.
           </p>
         </div>
 
         <div className="mt-16">
           <div className="mx-auto max-w-2xl">
-            <h3 className="text-xl font-semibold text-center mb-8">Connect with Vikram Aditya Verma</h3>
+            <h3 className="group text-2xl font-semibold text-center mb-8 text-white">
+              Connect with{` `}
+              <span
+                className="relative inline-block align-baseline bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-cyan-300 after:transition-all after:duration-300 group-hover:after:w-full"
+                style={{ fontFamily: 'var(--font-playfair)' }}
+              >
+                {typed}
+              </span>
+              <span className="ml-1 inline-block h-[1em] w-[2px] translate-y-[0.12em] animate-[blink_1s_steps(2,start)_infinite] bg-current" aria-hidden />
+            </h3>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <a 
                 href="https://x.com/ViXkrm" 
